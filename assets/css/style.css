@@ -79,8 +79,7 @@ figure {
 }
 
 figcaption { 
-    font-family: sans-serif;
-    background-color: #1f2121;
+    background-color: #19273d;
     padding: 10px;
     font-size: 170%;
     position: absolute;
@@ -88,19 +87,23 @@ figcaption {
 }
 
 .caption {
-    font-weight: bold;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 5px;
 }
 
 .description {
-    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    padding-top: 5px;
+    font-size: 60%;
 }
-
 
 img {
     border-style: solid;
     border-width: 6px;
-    border-color: #1f2121;
+    border-color: #19273d;
   }
 
 .project1 {
@@ -128,18 +131,58 @@ img {
     padding: 2px 20px;
 }
 
-/* .border {
-    padding: 1%;
-    border-width: 6px;
+.image-container {
+    position: relative;
+    
+}
+
+.overlayp1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 205%;
+    height: 99.45%;
+    /* width: 100%;
+    height: 99%; */
+    display: none;
+    color: #FFF;
+    transition: all 0.6s ease-out;
+}
+
+.overlayp1 {
+    display: block;
+    background: #61519780;
+}
+
+.image-container:hover .overlayp1 {
+    background: rgba(0, 0, 0, 0);
+}
+
+.overlayborder {
     border-style: solid;
-    border-image: 
-        linear-gradient(
-        to bottom,
-        #cddbe7, 
-        #818b93, 
-        #00000000
-        ) 1 0 0 100%;
-} */
+    border-width: 6px;
+    border-color: #19273d;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    display: none;
+    color: #FFF;
+    transition: all 0.6s ease-out;
+}
+
+.overlay {
+    display: block;
+    background: #61519780;
+}
+
+.image-container:hover .overlay {
+    background: rgba(0, 0, 0, 0);
+}
 
 .border {
     border-left: 5px;
@@ -220,9 +263,9 @@ aside {
         font-size: 20px;
     }
     
-  }
+}
 
-  @media (max-width: 930px) {
+  @media (max-width: 975px) {
     .project1 {
         padding-right: 0;
     }
@@ -234,4 +277,9 @@ aside {
         padding-left: 10px;
     }
     
-  }
+    .overlayborder {
+        display: none;
+        
+    }
+
+}
