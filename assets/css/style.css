@@ -12,6 +12,7 @@ header {
     padding: 30px;
     font-family: 'Arial', sans-serif;
     background-color: #151325;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -53,26 +54,10 @@ p {
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #cddbe7;
     font-size: 300%;
+    padding-right: 20px;
 }
-
-/* aside {
-    padding: 20px;
-    float: left;
-    height: 100%;
-    background-color: #2589bd;
-    clear: both;
-    
-    } */
-
-
-/* aside section h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-size: 300%;
-    
-} */
 
 figure {
     padding: 10px;
@@ -113,7 +98,8 @@ img {
 
 
 .container {
-    display: inline; 
+    display: inline;
+
 }
 
 .wrapper {
@@ -127,19 +113,17 @@ img {
     border-image: 
         linear-gradient(
         to bottom,
-        rgb(152, 160, 167), 
-        rgb(81, 95, 107), 
-        rgba(0, 0, 0, 0)
+        #cddbe7, 
+        #818b93, 
+        #00000000
         ) 1 0 0 100%;
 }
 
 aside {
-    background: #0088ce;
     color: #fff;
     float: left;
-    height: 100%;
     width: 30%;
-    text-align: center;
+    text-align: right;
     }
 
 .content {
@@ -152,6 +136,7 @@ aside {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 
 @media (max-width: 480px) {
     h2 {
@@ -172,6 +157,10 @@ aside {
       text-align: center;
     }
     
+    p {
+        padding-left: 10px;
+    }
+
   }
 
   @media (max-width: 930px) {
