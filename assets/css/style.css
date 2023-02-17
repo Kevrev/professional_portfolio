@@ -80,21 +80,20 @@ figure {
 
 figcaption { 
     font-family: sans-serif;
-    color: #000000;
     background-color: #1f2121;
     padding: 10px;
     font-size: 170%;
-    font-weight: bold;
     position: absolute;
     bottom: 30px;
 }
 
 .caption {
-
+    font-weight: bold;
+    color: white;
 }
 
 .description {
-    
+    color: white;
 }
 
 
