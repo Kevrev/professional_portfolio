@@ -89,13 +89,13 @@ figcaption {
 .caption {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #ffffff;
+    color: #b8dfe7;
     padding-bottom: 5px;
 }
 
 .description {
     font-family: 'Arial Narrow Bold', sans-serif;
-    color: #ffffff;
+    color: #b8dfe7;
     padding-top: 5px;
     font-size: 60%;
 }
@@ -213,22 +213,28 @@ aside {
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 55px;
-    padding-left: 60px;
+    padding-left: 26px;
+    margin-top: 10px;
 } 
 
- .content ul li a {
+ .content .contactbutton {
     color: #cddbe7;
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 160%;
-    font-weight: bold; 
-    border-bottom: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #cddbe7;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #cddbe760;
+    background-color: #191d2ca4;
+    padding: 14px 28px;
+    border-radius: 6px;
     
-
 }
 
+.contactbutton:hover {
+    background-color: #5d73b5;
+    color: #ffffff;
+  }
 
 
 @media (max-width: 480px) {
