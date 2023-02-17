@@ -42,31 +42,144 @@ header div ul li a {
     /* font-weight: 700; */
 }
 
+article {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    max-width: 800px;
+}
+
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 300%;
 }
 
-/* .work {
-    display: flex;
-    justify-content: center;
-    align-items: start;
+/* aside {
+    padding: 20px;
+    float: left;
+    height: 100%;
+    background-color: #2589bd;
+    clear: both;
+    
+    } */
+
+
+/* aside section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 300%;
+    
 } */
+
+figure {
+    padding: 10px;
+}
+
+figcaption { 
+    font-family: sans-serif;
+    color: #000000;
+    background-color: #1f2121;
+    font-size: 170%;
+    font-weight: bold;
+    position: relative;
+    bottom: 110px;
+    left: 20px;
+}
+
+
+img {
+    border-style: solid;
+    border-width: 6px;
+    border-color: #1f2121;
+  }
+
+.project1 {
+    padding-right: 424px;
+}
+
+.img1 {
+    width: 205%;
+    height: auto;
+}
+
+
+.imga {
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    display: inline; 
+}
+
+.wrapper {
+    padding: 50px 25px;
+}
+
+.border {
+    padding: 1%;
+    border-width: 6px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom,
+        rgb(152, 160, 167), 
+        rgb(81, 95, 107), 
+        rgba(0, 0, 0, 0)
+        ) 1 0 0 100%;
+}
+
+aside {
+    background: #0088ce;
+    color: #fff;
+    float: left;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    }
+
+.content {
+    float: left;
+    width: 70%;
+}
 
 .workflex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-figcaption { 
-    text-align: center;
-}
+@media (max-width: 480px) {
+    h2 {
+      font-size: 20px;
+    }
 
-img {
-    border-style: solid;
-    border-width: 8px;
+    header h1 {
+      font-size: 16px;    
+    }
+
+    header div ul li {
+        display: inline;
+        margin-left: 5px;
+    }    
+
+    header div ul li a {
+      font-size: 15px;
+      text-align: center;
+    }
+    
   }
 
+  @media (max-width: 930px) {
+    .project1 {
+        padding-right: 0;
+    }
+    .img1 {
+        width: 100%;
+        height: auto;
+    }    
+  }
