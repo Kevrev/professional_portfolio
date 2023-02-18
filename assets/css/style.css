@@ -20,22 +20,23 @@ header h1 {
     color: #ffffff;
 }
 
-header section {
+header nav {
     float: right;
     margin-right: 25px;
     padding-bottom: 20px;
 }
 
-header section ul {
+header nav ul {
     list-style-type: none;
 }
 
-header section ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-header section ul li a {
+/* Header nav text */
+header nav ul li a {
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: #ffffff;
@@ -45,6 +46,7 @@ header section ul li a {
     color: #ffffff;
 }
 
+/* Used for section titles "About Me", "Work", "Contact" */
 h2 {
     padding-right: 20px;
     font-size: 300%;
@@ -85,12 +87,14 @@ figcaption {
     background-repeat: no-repeat;
 }
 
+/* Alignment for text and avatar */
 .alignment {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Text for "About Me" */
 .text {
     float: left;
     clear: both;
@@ -116,6 +120,7 @@ figcaption {
     padding-bottom: 25px;
 }
 
+/* Adds the border along the left side */
 .wrapper {
     padding: 2px 20px;
     border-left: 5px;
@@ -153,17 +158,21 @@ figcaption {
     padding-right: 424px;
 }
 
+/* For project 1 */
 .img1 {
     width: 202%;
     height: auto;
 }
 
+/* For project 2 */
 .img1, .img2 {
     border-style: solid;
     border-width: 6px;
     border-color: #191d2c;
-  }
+}
 
+
+/* Provides purple overlay, border, and transition parameters for the fade */
 .overlay {
     position: absolute;
     top: 0;
@@ -180,11 +189,13 @@ figcaption {
     
 }
 
+/* Sizing for the project 1 image size, overwrites '.overlay' size */
 #overlayproj1 {
     width: 202%;
     height: 99.8%;
 }
 
+/* The space around the contact buttons */
 .contactbutton-wrap {
     display: inline-block;
     padding-top: 5px;
@@ -193,6 +204,7 @@ figcaption {
     margin-top: 10px;
 } 
 
+/* The contact buttons themselves */
 .contactbutton {
     padding: 14px 28px;
     border-radius: 6px;
@@ -206,18 +218,19 @@ figcaption {
     color: #cddbe7;
 }
 
+/* Changes the color of contact buttons upon hover */
 .contactbutton:hover {
     background-color: #5d73b5;
     color: #ffffff;
 }
 
+/* Fades out the overay on the project images by changing the color to transparency */
 .image-container:hover .overlay {
     background: #00000000;
 }
 
-
 @media (max-width: 1250px) {
-
+    /* Adjusts banner to remove empty space when changing window size */
     .banner {
         padding-bottom: 100px;
     }
@@ -275,10 +288,6 @@ figcaption {
     h2 {
       font-size: 20px;
 
-    }
-
-    p {
-        padding-left: 10px;
     }
 
 }
