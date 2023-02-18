@@ -137,7 +137,7 @@ figcaption {
 }
 
 .img1 {
-    width: 205%;
+    width: 202%;
     height: auto;
 }
 
@@ -161,8 +161,8 @@ figcaption {
     position: absolute;
     top: 0;
     left: 0;
-    width: 205%;
-    height: 99.45%;
+    width: 202%;
+    height: 99.8%;
     display: none;
     color: #FFF;
     transition: all 0.6s ease-out;
