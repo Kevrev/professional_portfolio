@@ -50,7 +50,7 @@ header div ul li a {
     background-image: url(../images/banner.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 0 0 250px 0;
+    padding: 0 0 200px 0;
     margin-bottom: 20px;
 }
 
@@ -62,8 +62,32 @@ article {
 .text {
     font-family: Helvetica, arial, sans-serif;
     color: #cddbe7;
-    line-height: 1.9;
-    max-width: 800px;
+    line-height: 1.5;
+    padding-right: ;
+    font-size: 110%;
+    float: left;
+    clear: both;
+}
+
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+.avatar {
+    padding-left: 10px;
+    max-width: 30%;
+    flex-basis: 40%;
+    border-radius: 30px;
+}
+
+
+
+
+
+.avatar {
+    float: right;
+    clear: both;
 }
 
 h2 {
@@ -74,12 +98,12 @@ h2 {
 }
 
 figure {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 15px 10px;
     position: relative;
 }
 
 figcaption { 
-    background-color: #19273d;
+    background-color: #191d2c;
     padding: 10px;
     font-size: 170%;
     position: absolute;
@@ -89,21 +113,21 @@ figcaption {
 .caption {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #b8dfe7;
+    color: #cddbe7;
     padding-bottom: 5px;
 }
 
 .description {
     font-family: 'Arial Narrow Bold', sans-serif;
-    color: #b8dfe7;
+    color: #cddbe7;
     padding-top: 5px;
     font-size: 60%;
 }
 
-img {
+.img1.img2 {
     border-style: solid;
     border-width: 6px;
-    border-color: #19273d;
+    border-color: #191d2c;
   }
 
 .project1 {
@@ -115,11 +139,6 @@ img {
     height: auto;
 }
 
-
-.imga {
-    width: 100%;
-    height: auto;
-}
 
 
 .container {
@@ -161,7 +180,7 @@ img {
 .overlayborder {
     border-style: solid;
     border-width: 6px;
-    border-color: #19273d;
+    border-color: #191d2c;
 }
 
 .overlay {
@@ -198,8 +217,10 @@ aside {
     }
 
 .content {
-    float: left;
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 880px;
     padding-bottom: 25px;
 }
 
@@ -217,7 +238,7 @@ aside {
     margin-top: 10px;
 } 
 
- .content .contactbutton {
+.content .contactbutton {
     color: #cddbe7;
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
@@ -234,8 +255,39 @@ aside {
 .contactbutton:hover {
     background-color: #5d73b5;
     color: #ffffff;
-  }
+}
 
+@media (max-width: 1250px) {
+
+    .banner {
+        padding-bottom: 100px;
+    }
+
+}
+
+
+@media (max-width: 975px) {
+    .project1 {
+        padding-right: 0;
+    }
+    .img1 {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        padding-left: 10px;
+    }
+    
+    .overlayborder {
+        display: none;
+        
+    }
+
+    .banner {
+        padding-bottom: 25px;
+    }
+
+}
 
 @media (max-width: 480px) {
     h2 {
@@ -271,21 +323,3 @@ aside {
     
 }
 
-  @media (max-width: 975px) {
-    .project1 {
-        padding-right: 0;
-    }
-    .img1 {
-        width: 100%;
-        height: auto;
-    }
-    p {
-        padding-left: 10px;
-    }
-    
-    .overlayborder {
-        display: none;
-        
-    }
-
-}
